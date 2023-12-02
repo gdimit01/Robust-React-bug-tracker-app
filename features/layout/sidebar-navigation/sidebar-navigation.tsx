@@ -26,6 +26,11 @@ export function SidebarNavigation() {
     toggleSidebar();
   };
 
+  const handleSupportClick = () => {
+    const mailtoLink = `mailto:support@prolog-app.com?subject=Support Request: `;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div
       className={classNames(
@@ -89,7 +94,7 @@ export function SidebarNavigation() {
               text="Support"
               iconSrc="/icons/support.svg"
               isCollapsed={isSidebarCollapsed}
-              onClick={() => alert("Support")}
+              onClick={handleSupportClick}
             />
             <MenuItemButton
               text="Collapse"
