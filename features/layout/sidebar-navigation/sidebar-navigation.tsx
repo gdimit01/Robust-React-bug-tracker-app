@@ -33,7 +33,6 @@ export function SidebarNavigation() {
   }, []);
 
   const handleToggleSidebar = () => {
-    console.log("Toggling Sidebar, Current State: ", isSidebarCollapsed);
     toggleSidebar();
   };
 
